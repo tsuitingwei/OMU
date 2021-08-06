@@ -1,0 +1,12 @@
+#omulogo{
+    display: block;
+    margin:auto;
+}
+.aboutarea{
+   width: 60%;
+   height: 300px;
+   margin: 0 auto;
+   /* background-color: rgb(148, 148, 148); */
+   text-align: center;
+   color: grey;
+}

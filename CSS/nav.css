@@ -1,0 +1,154 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: gray;
+  }
+
+.hold {
+    height: 80px;
+}
+  
+.header {
+    line-height: 80px;
+    width: 100%;
+    transition: line-height 0.2s linear, box-shadow 0.2s linear, background-color 0.2s linear;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255); 
+}
+
+/* .header:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+} */
+
+#logo {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-image: url('../IMG/LOGO-03S.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    float: left;
+    height: 50px;
+    width: 170px;
+    margin-left: 5px;
+  }
+  
+ul.nav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+ul.nav li {
+    float: left;
+    position: relative;
+   
+}
+
+ul.nav li a {
+    color: rgb(90, 61, 33);
+    transition: color 0.2s linear;
+    font-size: 18px;
+    padding: 21px;
+    text-decoration: initial;
+}
+  
+ul.nav li:hover a {
+    color: rgb(255, 188, 101);
+}
+  
+
+@media all and (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+    
+    #logo {
+        position: initial;
+        float: none;
+        display: block;
+        transform: none;
+        margin: 10px auto 0 auto;
+    }
+    
+    ul.nav {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    ul.nav li {
+        /* float:initial; */
+        display: inline-block;
+    }
+  }
+
+  footer{
+    padding:12px 12px;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.footText{
+    color: cadetblue;
+    padding-top: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+.myLogo{
+    height: 80px;
+    margin: 0 auto;
+    float: left;
+    
+}
+
+.logoHome{
+    padding-top: 20px;
+    list-style: none;
+}
+
+.logoHome li{
+    float: right;
+    margin-right: 15px;
+
+}
+
+.slider_container {
+    position: relative;
+    max-width:100%;
+    height: 500px;
+}
+
+.slider_container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.title{
+    margin: 50px auto 0px auto;
+    height: 80px;
+}
+
+.title h3{
+    width: 150px;
+    height: 30px;
+    border-left: 3px rgb(255, 213, 79) solid;
+    border-right: 3px rgb(255, 213, 79) solid;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px auto;
+}

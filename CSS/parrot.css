@@ -1,0 +1,198 @@
+body{
+  font-size: 16px;
+}
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imgBox{
+  padding: 2em 0;
+  float: left;
+  width: 30%;
+  border-bottom: 2px rgb(255, 255, 255) groove  ;
+}
+
+.imgBox:nth-last-child(){
+ margin-bottom: 30px;
+}
+
+
+.test{
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px){
+  .imgBox{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .imgBox{
+    width: 33.33333%;
+  }
+}
+
+.imgBox .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.imgBoxContent {
+  position: relative;
+  width: 350px;
+  margin: auto;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.imgBoxContent .contentOverlay {
+  background: rgba(94, 94, 94, 0.7);
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.imgBoxContent:hover .contentOverlay{
+  opacity: 1;
+}
+
+.contentImage{
+  width: 350px;
+  height: 450px;
+}
+
+.contentDetails {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imgBoxContent:hover .contentDetails{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.contentDetails h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.contentDetails p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.textcontainerT{
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.textcontainerS{
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.textcontDes{
+  display: none;
+}
+
+.contDes{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  height: 380px;
+  width: 380px;
+  overflow: auto;
+  word-wrap:break-word;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+/* ------------------------------ */
+
+/* 背景黑幕 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000px; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding: 0.5sem 0;
+}
+
+.modalContent {
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 70% ;
+}
+
+.imgcontainer {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.textcontainer{
+  width: 50%;
+  height: 600px;
+  font-size: 15px;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.884);
+  margin: auto;
+  float: right;
+}
+
+.avatar {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  object-fit: cover;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}

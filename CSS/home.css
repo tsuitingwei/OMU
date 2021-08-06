@@ -1,0 +1,297 @@
+.aboutWeb{
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.aboutText{
+    padding: 30px 0;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+
+.container_b{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    margin: 0px auto 0px auto;
+}
+
+.box{
+    width: 300px;
+    height: 400px;
+    background-color:rgb(54, 122, 168);
+    float: left;
+    position: relative;
+    margin: nones ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#box1{
+    background-image:url(../IMG/bird/123.jpg);
+    background-size: cover;
+}
+
+#box2{
+    background-image:url(../IMG/bird/photo-1562085482-c34f886206da.jpg);
+    background-size: cover;
+}
+    
+#box3{
+    
+    background-image:url(../IMG/bird/photo-1548942415-998c10fc39a6.jpg);
+    background-size: cover;
+}
+
+.box:first-child{
+    margin-left: 25px;
+}
+
+.boxInner{
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    transition: height 0.3s ease-in-out,background-color 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.boxInner:hover{
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.boxTittle {
+    padding: 10px 16px;
+    height: 100px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.box a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+.boxContect {
+    padding: 10px 16px;
+    font-size: 15px;
+    text-align: left;
+    color: rgb(90, 90, 90);
+}
+
+.videoArea{
+    height: 600px;
+    width: 100%;
+    background-color: springgreen;
+    background-image: url(../IMG/formbg2.jpg);
+    background-size: cover;
+    background-position:center;
+    /* background-attachment:fixed; */
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.videoTittle{
+
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+    padding: 90px;
+
+}
+
+.videoTittle h3{
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-left: 3px rgb(255, 213, 79) solid;
+    border-right: 3px rgb(255, 213, 79) solid;
+    /* background-color: rgba(78, 78, 78, 0.7); */
+}
+
+.test{
+    /* background-color: rgb(169, 212, 247); */
+    width: 900px;
+    padding: 30px 75px;
+}
+
+.test2{
+    /* background-color: rgb(92, 107, 4);  */
+    height: 40px;
+    font-size: 35px;
+
+}
+
+
+.videoGroup{
+    display: flex;
+    gap: 25px;
+    height: 350px;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.videoGroup>iframe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin: nones ;
+}
+
+/* Slider */
+
+.partners{
+    height: 200px;
+    width: 1000px;
+    margin: 50px auto 80px auto;
+}
+
+.slick-slide {
+    margin: 10px 20px;
+}
+  
+.slick-slide img {
+    width: 100%;
+}
+  
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    touch-action: pan-y;  
+}
+  
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+  
+.slick-list:focus{
+    outline: none;
+}
+
+.slick-list.dragging{
+    cursor: pointer;
+    cursor: hand;
+}
+  
+.slick-slider .slick-track,
+.slick-slider .slick-list{
+    transform: translate3d(0, 0, 0);
+}
+  
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after{
+    display: table;
+    content: '';
+}
+  
+.slick-track:after{
+    clear: both;
+}
+
+.slick-loading .slick-track{
+    visibility: hidden;
+}
+  
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide{
+    float: right;
+}
+  
+.slick-slide img{
+    display: block;
+}
+
+.slick-slide.slick-loading img{
+    display: none;
+}
+
+.slick-slide.dragging img{
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide{
+    display: block;
+}
+
+.slick-loading .slick-slide{
+    visibility: hidden;
+}
+  
+.slick-vertical .slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* 表單 */
+.formArea{
+    height: 500px;
+    width: 100%;
+    background-image: url(../IMG/formbg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.myForm{
+    /* background-color: rgb(255, 213, 79); */
+    width: 800px;
+    margin: 0 auto;
+    float: left;
+    border-right: rgba(78, 78, 78, 0.7);
+}
+
+.formArea form , .formArea button{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* 表單的尾巴 */
+
+
+
+
+/* 優化 */
+@media all and (max-width: 768px) {
+
+
+
+}
+
+

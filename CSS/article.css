@@ -1,0 +1,84 @@
+body {
+    color: #252525;
+    margin: 0 auto;
+}
+  
+h2 {
+    line-height: 1.2em;
+    font-size: 4em;
+    color: #2e3c40;
+    font-weight: 500;
+  }
+  
+p {
+    font-size: 1.125em;
+    line-height: 1.675rem;
+    letter-spacing: 0.08em;
+    font-weight: 300;
+}
+  
+  
+hr {
+    height: 6px;
+    border: 0;
+}
+  
+.mysection{
+    margin-top: 50px;
+}
+
+#articlesArea {
+    z-index: 3;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+ 
+#articlesArea article {
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+/* 大標和小標的中間 */
+.divider {
+    width: 175px;
+    height: 3px;
+    background-color: rgb(255, 213, 79);
+    margin: 1em 0;
+}
+ 
+/* 小重點 */
+.featured {
+    border-left: 3px solid rgb(255, 213, 79);
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fffc4948;
+}
+
+.meta {
+    font-weight: bold;
+  }
+
+.meta a {
+    background-color: rgb(255, 213, 79);
+    color: #fff;
+    padding: 0 0.5rem;
+}
+
+.pagination {
+    margin-bottom: 2em;
+}
+
+.pagination a {
+    color: #888;
+    background-color: #efefef;
+    border-top: none;
+    border-bottom: none;
+    border-color: #ffccc9;
+}
+ 
+.sourcetext p a{
+    text-decoration: none;
+    color: gray;
+}
+  
